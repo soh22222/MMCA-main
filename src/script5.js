@@ -40,7 +40,7 @@ const canvas = document.querySelector('canvas.webgl')
 // Scene
 const scene = new THREE.Scene()
 scene.background = new THREE.Color(0.1, 0.17, 0.22)
-scene.fog = new THREE.Fog( 'black', 10, 50 );
+scene.fog = new THREE.Fog( 'black', 20, 40 );
 
 //plane
 const geometry = new THREE.PlaneGeometry();
@@ -325,7 +325,7 @@ const raycaster = new THREE.Raycaster()
 let currentIntersect = null
 
 const tick = () => {
-    const elapsedTime = clock.getElapsedTime();
+    const elapsedTime = clock.getElapsedTime(); 
     const deltaTime = elapsedTime - previousTime
     previousTime = elapsedTime
     //model.position.y = Math.sin(elapsedTime * 0.3) * 1.5
