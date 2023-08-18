@@ -177,7 +177,7 @@ const gltfLoader = new GLTFLoader()
 let mixer = null
 let images = null
 
-gltfLoader.load("/models/world_middle/world_middle_images.gltf", (gltf) => {
+gltfLoader.load("/models/world_click/world_click_image.gltf", (gltf) => {
     images = gltf.scene;
     console.log(images)
 
@@ -190,7 +190,7 @@ gltfLoader.load("/models/world_middle/world_middle_images.gltf", (gltf) => {
 
 
 let model2 = null
-gltfLoader.load("/models/world_middle/world_middle_videos.gltf", (gltf) => {
+gltfLoader.load("/models/world_click/world_click_video.gltf", (gltf) => {
     model2 = gltf.scene;
     //model2.color = new THREE.Color('red')
    
@@ -206,7 +206,7 @@ gltfLoader.load("/models/world_middle/world_middle_videos.gltf", (gltf) => {
 
 
 let model3 = null
-gltfLoader.load("/models/world_middle/world_middle_articles.gltf", (gltf) => {
+gltfLoader.load("/models/world_click/world_click_article.gltf", (gltf) => {
     model3 = gltf.scene;
     console.log(model3)
 
@@ -217,7 +217,7 @@ gltfLoader.load("/models/world_middle/world_middle_articles.gltf", (gltf) => {
 );
 
 let model4 = null
-gltfLoader.load("/models/world_middle/world_middle_ads.gltf", (gltf) => {
+gltfLoader.load("/models/world_click/world_click_advertise.gltf", (gltf) => {
     model4 = gltf.scene;
     console.log(model4)
 
